@@ -1,0 +1,132 @@
+***********************************************************
+    Analysis of One dimesnional Boundary Value Problem     
+         ... program written for CEE 526 FEM ...           
+                             > Dharanidharan Arumugam <    
+***********************************************************
+
+__________________________________________________________
+
+Part A: DETAILS OF THE 1DBVP FINITE ELEMENT MODEL           
+__________________________________________________________
+
+$ Model Summary    
+---------------------------
+
+ ->  Number of alpha groups   : 2
+ ->  Number of beta groups    : 1
+ ->  Number of force groups   : 1
+ ->  Number of nodal flux     : 1
+ ->  Number of elements       : 3
+ ->  Number of nodes          : 4
+
+
+
+$ Nodal coordinates 
+---------------------------
+
+  nodes   x_coordinate 
+------------------------
+    1       0.0000
+    2       0.1500
+    3       0.3000
+    4       0.6000
+
+
+
+$ Nodal Fluxes 
+---------------------------
+
+  nodes     flux 
+------------------------
+    2  300000.0000
+
+
+
+$ Element properties 
+---------------------------
+
+  element      alpha       beta       force
+---------------------------------------------
+     1        5e+07            0            0
+     2        5e+07            0            0
+     3        8e+07            0            0
+
+
+
+$ Element connectivity 
+---------------------------
+
+  element   connected nodes
+---------------------------------
+    1         1    2
+    2         2    3
+    3         3    4
+
+
+
+$ Boundary Conditions 
+---------------------------
+
+  node   condition      value1       value2
+--------------------------------------------
+    1    essential        0.00
+    4    essential        0.00
+
+
+__________________________________________________________
+
+Part B: ANALYSIS OUTPUTS          
+__________________________________________________________
+
+$ Solver Performance   
+--------------------------------
+
+-> Absolute Error Norm : 2.91e-11
+-> Relative Error Norm : 9.701e-17
+
+
+
+
+$ Nodal Unknown Values 
+---------------------------
+
+  nodes    location     value
+---------------------------------
+    1       0.0000            0
+    2       0.1500    0.0006231
+    3       0.3000    0.0003462
+    4       0.6000            0
+
+
+
+$ Nodal Flux Values 
+---------------------------
+
+  element  node  location      flux
+---------------------------------------
+
+     1      1     0.0000  -207692.3077
+            2     0.1500  -207692.3077
+
+     2      2     0.1500    92307.6923
+            3     0.3000    92307.6923
+
+     3      3     0.3000    92307.6923
+            4     0.6000    92307.6923
+
+
+
+$ Peak values    
+--------------------------------
+
+# Nodal unknowns    
+   -> Minimum value :   0.0000 at location: 0.0000 
+   -> Maximum value :   0.0006 at location: 0.1500 
+
+# Element Fluxes    
+   -> Minimum value : -207692.3077 at location: 0.0000 
+   -> Maximum value : 92307.6923 at location: 0.3000 
+
+
+______________________End of the file____________________
+

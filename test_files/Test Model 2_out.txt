@@ -1,0 +1,131 @@
+***********************************************************
+    Analysis of One dimesnional Boundary Value Problem     
+         ... program written for CEE 526 FEM ...           
+                             > Dharanidharan Arumugam <    
+***********************************************************
+
+__________________________________________________________
+
+Part A: DETAILS OF THE 1DBVP FINITE ELEMENT MODEL           
+__________________________________________________________
+
+$ Model Summary    
+---------------------------
+
+ ->  Number of alpha groups   : 1
+ ->  Number of beta groups    : 1
+ ->  Number of force groups   : 2
+ ->  Number of nodal flux     : 0
+ ->  Number of elements       : 2
+ ->  Number of nodes          : 5
+
+
+
+$ Nodal coordinates 
+---------------------------
+
+  nodes   x_coordinate 
+------------------------
+    1       0.0000
+    2       1.0000
+    3       2.0000
+    4       3.0000
+    5       4.0000
+
+
+
+$ Nodal Fluxes 
+---------------------------
+
+  nodes     flux 
+------------------------
+No nodal fluxes provided
+
+
+
+$ Element properties 
+---------------------------
+
+  element      alpha       beta       force
+---------------------------------------------
+     1        6e+07            0            1
+     2        6e+07            0            9
+
+
+
+$ Element connectivity 
+---------------------------
+
+  element   connected nodes
+---------------------------------
+    1         1    2    3
+    2         3    4    5
+
+
+
+$ Boundary Conditions 
+---------------------------
+
+  node   condition      value1       value2
+--------------------------------------------
+    1    essential        0.00
+    5    natural                     0.00
+
+
+__________________________________________________________
+
+Part B: ANALYSIS OUTPUTS          
+__________________________________________________________
+
+$ Solver Performance   
+--------------------------------
+
+-> Absolute Error Norm : 1.763e-14
+-> Relative Error Norm : 1.368e-15
+
+
+
+
+$ Nodal Unknown Values 
+---------------------------
+
+  nodes    location     value
+---------------------------------
+    1       0.0000            0
+    2       1.0000     3.25e-07
+    3       2.0000    6.333e-07
+    4       3.0000    8.583e-07
+    5       4.0000    9.333e-07
+
+
+
+$ Nodal Flux Values 
+---------------------------
+
+  element  node  location      flux
+---------------------------------------
+
+     1      1     0.0000      -20.0000
+            2     1.0000      -19.0000
+            3     2.0000      -18.0000
+
+     2      3     2.0000      -18.0000
+            4     3.0000       -9.0000
+            5     4.0000        0.0000
+
+
+
+$ Peak values    
+--------------------------------
+
+# Nodal unknowns    
+   -> Minimum value :   0.0000 at location: 0.0000 
+   -> Maximum value :   0.0000 at location: 4.0000 
+
+# Element Fluxes    
+   -> Minimum value : -20.0000 at location: 0.0000 
+   -> Maximum value :   0.0000 at location: 4.0000 
+
+
+______________________End of the file____________________
+

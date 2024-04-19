@@ -1,0 +1,38 @@
+test_files/error_file_of_Test Model 2.txt 
+***********************************************************
+
+# Individual Errors           
+------------------------------
+
+
+
+# Missing Block errors:         
+------------------------------
+
+
+
+# Boundary conditions check:       
+------------------------------
+
+
+
+# Error summary 
+------------------------------
+
+ -> 0 total_errors in the input file
+
+
+# check the flux nodes available
+------------------------------
+
+
+
+# check incosistent sequential node connectivity
+------------------------------
+
+
+
+# Error summary 
+------------------------------
+
+ -> 0 total_errors in the input file
